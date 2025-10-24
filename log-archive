@@ -1,0 +1,7 @@
+#!/bin/bash
+
+tar_name=$(echo logs_archive_$(date +"%Y%m%d_%H%M%S").tar.gz)
+
+tar -czf logs_archive_$(date +"%Y%m%d_%H%M%S").tar.gz $1
+
+echo "$tar_name"
